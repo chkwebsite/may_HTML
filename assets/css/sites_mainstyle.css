@@ -1,0 +1,262 @@
+/* Variables  */
+:root{
+  --theme-color:#1AA479;
+  --theme-light-color:#78fdd3;
+}
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px var(--theme-light-color);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: #1AA479;
+  -webkit-box-shadow: inset 0 0 6px var(--theme-light-color);
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+  background: var(--theme-color);
+}
+
+.header-top{
+  background-color: rgba(36, 187, 140,0.05);
+}
+.register-btn{
+  padding: 5px 10px;
+  margin-left: 10px;
+  background-color:var(--theme-color);
+  border: 1px solid transparent;
+}
+.theme-color{
+  color: var(--theme-color);
+}
+.theme-bg{
+  background-color: var(--theme-color);
+}
+.text-bold{
+  font-weight:500
+}
+.wave{
+  position: relative;
+  min-height: 500px;
+  background-color: rgba(36, 187, 140,0.05);
+}
+.wave::before {
+  content: "";
+  background-image: url(../images/wave-1.png);
+  position: absolute;
+  top: 0;
+  left: 0px;
+  bottom: 0;
+  right: 0;
+  background-repeat: no-repeat;
+  background-size: 20%;
+  z-index: -1;
+}
+.wave::after {
+  content: "";
+  background-image: url(../images/wave-2.png);
+  position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0px;
+    right: 0;
+    background-repeat: no-repeat;
+    background-size: 20%;
+    z-index: -1;
+    background-position: 100% 150%;
+}
+.grid-3{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 12px;
+  width: 100%;
+}
+.gcc{
+  display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+}
+@media (max-width:400px){
+  .grid-3{
+    display: grid;
+    grid-template-columns: auto;
+    gap: 12px;
+    width: 100%;
+  }
+}
+.container-new {
+  width: 90%;
+  margin: auto;
+  padding: 0px 14px;
+}
+.skill{
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.skill .skill-border{
+    position: relative;
+    background-image: url(../images/circle.png);
+    background-repeat: no-repeat;
+}
+.skill .skill-border img{
+  width: 86%;
+    position: relative;
+    left: 10px;
+    top: -4px;
+}
+.result{
+  position: absolute;
+  top: 25%;
+  left: 0%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #EAECF0;
+  border: 1px solid var(--theme-color);
+  border-radius: 12px;
+  gap: 12px;
+  padding: 0px 12px;
+}
+.dots{
+  position: absolute;
+  bottom: 15%;
+  background-color: #1aa479;
+  border: 1px solid var(--theme-color);
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  left: 0%;
+}
+.likes{
+  position: absolute;
+  top: 0;
+  right: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #EAECF0;
+  border: 1px
+solid var(--theme-color);
+  border-radius: 12px;
+  gap: 12px;
+  padding: 10px 12px;
+  text-align: center;
+}
+.tutor{
+  position: absolute;
+  right: 10%;
+  bottom: 10%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #EAECF0;
+  border: 1px solid var(--theme-color);
+  border-radius: 12px;
+  gap: 12px;
+  padding: 0px 12px;
+}
+@media (min-width:350px) and (max-width:499px){
+  .skill .skill-border{
+    height: 425px;
+    background-size: 100%;
+}
+.result {
+  left: -10%;
+}
+.likes {
+  right: -10%;
+}
+.tutor {
+  right: -10%;
+  bottom: 20%;
+}
+.skill .skill-border img {
+  width: 100%;
+  position: relative;
+  left: 5px;
+  top: 3px;
+}
+}
+@media (max-width:349px){
+  .skill .skill-border{
+    height: 250px;
+    background-size: 100%;
+}
+.skill .skill-border img {
+  width: 100%;
+  position: relative;
+  left: 5px;
+  top: 3px;
+}
+.result {
+  left: -10%;
+  padding: 0px 8px 0px 0px;
+}
+.img-w{
+  width:35px;
+}
+.result h4{
+  margin-bottom: 0px;
+}
+.likes {
+  right: -10%;
+  padding: 10px 8px;
+}
+.likes h4{
+  margin-bottom: 0px;
+}
+.likes .w-50{
+  width: 25%!important;
+}
+.tutor {
+  right: -10%;
+  bottom: 20%;
+}
+.tutor h4{
+  margin-bottom: 10px;
+}
+.tutor img{
+  width:35px;
+}
+}
+.grid-4{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 12px;
+  width: 100%;
+}
+.icvu{
+  display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    text-align: center;
+    margin: auto;
+}
+.icvu img{
+  width:75px
+}
+.icvu h4{
+  margin-bottom: 0px;
+}
+@media (min-width:400px) and (max-width:767px){
+  .grid-4{
+    grid-template-columns: auto auto;
+  }
+}
+@media (max-width:399px){
+  .grid-4{
+    grid-template-columns: auto;
+  }
+}
