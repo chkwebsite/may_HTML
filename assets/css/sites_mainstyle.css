@@ -259,4 +259,13 @@ solid var(--theme-color);
   .grid-4{
     grid-template-columns: auto;
   }
+  .icvu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    text-align: center;
+    margin: inherit;
+    justify-content: space-between;
+}
 }
