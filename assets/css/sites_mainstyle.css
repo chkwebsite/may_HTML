@@ -25,7 +25,9 @@
 ::-webkit-scrollbar-thumb:window-inactive {
   background: var(--theme-color);
 }
-
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
+  color: rgb(26 164 120);
+}
 .header-top{
   background-color: rgba(36, 187, 140,0.05);
 }
@@ -492,4 +494,22 @@ ul.footer-nav li a span{
   .right-col::after {
     display: none;
   }
+}
+.logo-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.btn-toggle .btn.active{
+  background-color: #198754;
+  border-color: #198754;
+  border-radius: 0px 25px 25px 0px;
+  color:#fff
+}
+.btn-toggle .btn{
+  background-color: rgba(25, 135, 84, 0.1);
+  border-color: rgba(25, 135, 84, 0.1);
+  border-radius: 25px 0px 0px 25px;
+  color: rgba(25, 135, 84, 1);
 }

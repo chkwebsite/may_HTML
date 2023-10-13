@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/sites_mainstyle.css">
+    <link rel="stylesheet" href="assets/css/theme-color/color.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/slick-slider.css">
+    <title>Career</title>
+</head>
+<body>
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="logo-link">
+                        <div>
+                            <h4 class="text-bold">Logo</h4>
+                        </div>
+                        <div class="">
+                            <a class="text-bold text-dark px-4" href="#">Sign In</a>
+                            <a class="btn btn-success" href="#">Register</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 p-0">
+                    <header>
+                        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                            <div class="container-fluid">
+                              <!-- <a class="navbar-brand pe-4" href="index.html">Logo</a> -->
+                              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                              </button>
+                              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                  <li class="nav-item">
+                                    <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link active" href="career.html">Career</a>
+                                  </li>
+                                  <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Elementary
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item" href="#">Elementary-1</a></li>
+                                      <li><a class="dropdown-item" href="#">Elementary-2</a></li>
+                                      <li><hr class="dropdown-divider"></li>
+                                      <li><a class="dropdown-item" href="#">Elementary-3</a></li>
+                                    </ul>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="#">iAVID</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="#">My CTE</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="#">Discover</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="#">Military</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="#">College</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="#">Career Placement</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="expert-task.html">Expert Talk</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="#">Feedback</a>
+                                  </li>
+                                  
+                                </ul>
+                                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                        <div class="btn-group btn-toggle"> 
+                                            <button class="btn btn-sm btn-default">GAP</button>
+                                            <button class="btn btn-sm btn-primary active">PACE</button>
+                                          </div>
+                                      </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </nav>
+                    </header>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page Script Start -->
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/all.min.js"></script>
+    <script type="text/javascript" src="assets/css/aos/aos.js"></script>
+    <script type="text/javascript" src="assets/js/slick-slider.js"></script>
+    <script>
+        $('.btn-toggle').click(function() {
+    $(this).find('.btn').toggleClass('active');  
+    
+    if ($(this).find('.btn-primary').length>0) {
+    	$(this).find('.btn').toggleClass('btn-primary');
+    }
+    if ($(this).find('.btn-danger').length>0) {
+    	$(this).find('.btn').toggleClass('btn-danger');
+    }
+    if ($(this).find('.btn-success').length>0) {
+    	$(this).find('.btn').toggleClass('btn-success');
+    }
+    if ($(this).find('.btn-info').length>0) {
+    	$(this).find('.btn').toggleClass('btn-info');
+    }
+    
+    $(this).find('.btn').toggleClass('btn-default');
+       
+});
+
+$('form').submit(function(){
+  var radioValue = $("input[name='options']:checked").val();
+  if(radioValue){
+     alert("You selected - " + radioValue);
+   };
+    return false;
+});
+    </script>
+</body>
+</html>
