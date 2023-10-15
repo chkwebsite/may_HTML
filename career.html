@@ -97,13 +97,13 @@
                     <nav class="navbar navbar-expand-lg bg-body-tertiary theme-bg">
                         <div class="container-fluid">
                           <a class="navbar-brand pe-4 text-white" href="index.html">Career Interest</a>
-                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#career-inst" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                           </button>
-                          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                          <div class="collapse navbar-collapse" id="career-inst">
                             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 my-career-m">
                               <li class="nav-item">
-                                <a class="nav-link " aria-current="page" href="career.html">Home</a>
+                                <a class="nav-link active" aria-current="page" href="career.html">Home</a>
                               </li>
                               <li class="nav-item">
                                 <a class="nav-link" href="career.html">My Career</a>
@@ -931,231 +931,246 @@
                   </ul>
                 </div>
                     <div class="overall-career">
-                        <div class="left-panel">
-                            <div class="filters">
-                                <p class="theme-color text-bold">Filter</p>
-                                <a class="text-muted" href="#">Clear</a>
+
+                        <nav class="navbar-expand-lg bg-body-tertiary nav-bb">
+                              <a class="navbar-brand pe-4 ll-hide theme-color text-bold" href="index.html">Filter</a>
+
+
+
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#filter-list" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <!-- <span class="navbar-toggler-icon"></span> -->
+                            <i class="fa-solid fa-bars-staggered"></i>
+                          </button>
+                          <div class="collapse navbar-collapse" id="filter-list">
+                            <div class="left-panel">
+                                <div class="filters">
+                                    <p class="theme-color text-bold">Filter</p>
+                                    <a class="text-muted" href="#">Clear</a>
+                                </div>
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            Ways to learn
+                                        </button>
+                                      </h2>
+                                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body p-0">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                                                <label class="form-check-label" for="flexRadioDefault1">
+                                                 all
+                                                </label>
+                                              </div>
+                                              <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" >
+                                                <label class="form-check-label" for="flexRadioDefault2">
+                                                    Core courses
+                                                </label>
+                                              </div>
+                                              <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" >
+                                                <label class="form-check-label" for="flexRadioDefault3">
+                                                    Expanded courses
+                                                </label>
+                                              </div>
+                                              <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4" >
+                                                <label class="form-check-label" for="flexRadioDefault4">
+                                                    Labs
+                                                </label>
+                                              </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                          Skill level
+                                        </button>
+                                      </h2>
+                                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body p-0">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="Skilllevel" id="Skilllevel1" checked>
+                                                <label class="form-check-label" for="Skilllevel1">
+                                                    Advanced
+                                                </label>
+                                              </div>
+                                              <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="Skilllevel" id="Skilllevel2" >
+                                                <label class="form-check-label" for="Skilllevel2">
+                                                    Beginner
+                                                </label>
+                                              </div>
+                                              <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="Skilllevel" id="Skilllevel3" >
+                                                <label class="form-check-label" for="Skilllevel3">
+                                                    Intermediate
+                                                </label>
+                                              </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                          Subject
+                                        </button>
+                                      </h2>
+                                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body p-0">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="subject" id="subject1" checked>
+                                                <label class="form-check-label" for="subject1">
+                                                    Architecture & construction
+                                                </label>
+                                              </div>
+                                              <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="subject" id="subject2" >
+                                                <label class="form-check-label" for="subject2">
+                                                    Business professional
+                                                </label>
+                                              </div>
+                                              <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="subject" id="subject3" >
+                                                <label class="form-check-label" for="subject3">
+                                                    Creative professional
+                                                </label>
+                                              </div>
+                                              <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="subject" id="subject4" >
+                                                <label class="form-check-label" for="subject4">
+                                                    Data professional
+                                                </label>
+                                              </div>
+                                              <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="subject" id="subject5" >
+                                                <label class="form-check-label" for="subject5">
+                                                    IT ops
+                                                </label>
+                                              </div>
+                                              <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="subject" id="subject6" >
+                                                <label class="form-check-label" for="subject6">
+                                                    Manufacturing & design
+                                                </label>
+                                              </div>
+                                              <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="subject" id="subject7" >
+                                                <label class="form-check-label" for="subject7">
+                                                    Information & cyber security
+                                                </label>
+                                              </div>
+                                              <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="subject" id="subject8" >
+                                                <label class="form-check-label" for="subject8">
+                                                    Software development
+                                                </label>
+                                              </div>
+                                              <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="subject" id="subject9" >
+                                                <label class="form-check-label" for="subject9">
+                                                    Web development
+                                                </label>
+                                              </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingfour">
+                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+                                            Sub Career
+                                          </button>
+                                        </h2>
+                                        <div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingfour" data-bs-parent="#accordionExample">
+                                          <div class="accordion-body p-0">
+                                              <div class="form-check">
+                                                  <input class="form-check-input" type="radio" name="Skilllevel" id="Skilllevel1" checked>
+                                                  <label class="form-check-label" for="Skilllevel1">
+                                                      Advanced
+                                                  </label>
+                                                </div>
+                                                <div class="form-check">
+                                                  <input class="form-check-input" type="radio" name="Skilllevel" id="Skilllevel2" >
+                                                  <label class="form-check-label" for="Skilllevel2">
+                                                      Beginner
+                                                  </label>
+                                                </div>
+                                                <div class="form-check">
+                                                  <input class="form-check-input" type="radio" name="Skilllevel" id="Skilllevel3" >
+                                                  <label class="form-check-label" for="Skilllevel3">
+                                                      Intermediate
+                                                  </label>
+                                                </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingfive">
+                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">
+                                            Lessons
+                                          </button>
+                                        </h2>
+                                        <div id="collapsefive" class="accordion-collapse collapse" aria-labelledby="headingfive" data-bs-parent="#accordionExample">
+                                          <div class="accordion-body p-0">
+                                              <div class="form-check">
+                                                  <input class="form-check-input" type="radio" name="Skilllevel" id="Skilllevel1" checked>
+                                                  <label class="form-check-label" for="Skilllevel1">
+                                                      Advanced
+                                                  </label>
+                                                </div>
+                                                <div class="form-check">
+                                                  <input class="form-check-input" type="radio" name="Skilllevel" id="Skilllevel2" >
+                                                  <label class="form-check-label" for="Skilllevel2">
+                                                      Beginner
+                                                  </label>
+                                                </div>
+                                                <div class="form-check">
+                                                  <input class="form-check-input" type="radio" name="Skilllevel" id="Skilllevel3" >
+                                                  <label class="form-check-label" for="Skilllevel3">
+                                                      Intermediate
+                                                  </label>
+                                                </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingsix">
+                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsesix" aria-expanded="false" aria-controls="collapsesix">
+                                            Endorsment
+                                          </button>
+                                        </h2>
+                                        <div id="collapsesix" class="accordion-collapse collapse" aria-labelledby="headingsix" data-bs-parent="#accordionExample">
+                                          <div class="accordion-body p-0">
+                                              <div class="form-check">
+                                                  <input class="form-check-input" type="radio" name="Skilllevel" id="Skilllevel1" checked>
+                                                  <label class="form-check-label" for="Skilllevel1">
+                                                      Advanced
+                                                  </label>
+                                                </div>
+                                                <div class="form-check">
+                                                  <input class="form-check-input" type="radio" name="Skilllevel" id="Skilllevel2" >
+                                                  <label class="form-check-label" for="Skilllevel2">
+                                                      Beginner
+                                                  </label>
+                                                </div>
+                                                <div class="form-check">
+                                                  <input class="form-check-input" type="radio" name="Skilllevel" id="Skilllevel3" >
+                                                  <label class="form-check-label" for="Skilllevel3">
+                                                      Intermediate
+                                                  </label>
+                                                </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <button type="button" class="btn btn-success w-100 mt-3 py-1">Apply</button>
                             </div>
-                            <div class="accordion" id="accordionExample">
-                                <div class="accordion-item">
-                                  <h2 class="accordion-header" id="headingOne">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        Ways to learn
-                                    </button>
-                                  </h2>
-                                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body p-0">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
-                                            <label class="form-check-label" for="flexRadioDefault1">
-                                             all
-                                            </label>
-                                          </div>
-                                          <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" >
-                                            <label class="form-check-label" for="flexRadioDefault2">
-                                                Core courses
-                                            </label>
-                                          </div>
-                                          <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" >
-                                            <label class="form-check-label" for="flexRadioDefault3">
-                                                Expanded courses
-                                            </label>
-                                          </div>
-                                          <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4" >
-                                            <label class="form-check-label" for="flexRadioDefault4">
-                                                Labs
-                                            </label>
-                                          </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="accordion-item">
-                                  <h2 class="accordion-header" id="headingTwo">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                      Skill level
-                                    </button>
-                                  </h2>
-                                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body p-0">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="Skilllevel" id="Skilllevel1" checked>
-                                            <label class="form-check-label" for="Skilllevel1">
-                                                Advanced
-                                            </label>
-                                          </div>
-                                          <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="Skilllevel" id="Skilllevel2" >
-                                            <label class="form-check-label" for="Skilllevel2">
-                                                Beginner
-                                            </label>
-                                          </div>
-                                          <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="Skilllevel" id="Skilllevel3" >
-                                            <label class="form-check-label" for="Skilllevel3">
-                                                Intermediate
-                                            </label>
-                                          </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="accordion-item">
-                                  <h2 class="accordion-header" id="headingThree">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                      Subject
-                                    </button>
-                                  </h2>
-                                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body p-0">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="subject" id="subject1" checked>
-                                            <label class="form-check-label" for="subject1">
-                                                Architecture & construction
-                                            </label>
-                                          </div>
-                                          <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="subject" id="subject2" >
-                                            <label class="form-check-label" for="subject2">
-                                                Business professional
-                                            </label>
-                                          </div>
-                                          <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="subject" id="subject3" >
-                                            <label class="form-check-label" for="subject3">
-                                                Creative professional
-                                            </label>
-                                          </div>
-                                          <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="subject" id="subject4" >
-                                            <label class="form-check-label" for="subject4">
-                                                Data professional
-                                            </label>
-                                          </div>
-                                          <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="subject" id="subject5" >
-                                            <label class="form-check-label" for="subject5">
-                                                IT ops
-                                            </label>
-                                          </div>
-                                          <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="subject" id="subject6" >
-                                            <label class="form-check-label" for="subject6">
-                                                Manufacturing & design
-                                            </label>
-                                          </div>
-                                          <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="subject" id="subject7" >
-                                            <label class="form-check-label" for="subject7">
-                                                Information & cyber security
-                                            </label>
-                                          </div>
-                                          <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="subject" id="subject8" >
-                                            <label class="form-check-label" for="subject8">
-                                                Software development
-                                            </label>
-                                          </div>
-                                          <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="subject" id="subject9" >
-                                            <label class="form-check-label" for="subject9">
-                                                Web development
-                                            </label>
-                                          </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingfour">
-                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
-                                        Sub Career
-                                      </button>
-                                    </h2>
-                                    <div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingfour" data-bs-parent="#accordionExample">
-                                      <div class="accordion-body p-0">
-                                          <div class="form-check">
-                                              <input class="form-check-input" type="radio" name="Skilllevel" id="Skilllevel1" checked>
-                                              <label class="form-check-label" for="Skilllevel1">
-                                                  Advanced
-                                              </label>
-                                            </div>
-                                            <div class="form-check">
-                                              <input class="form-check-input" type="radio" name="Skilllevel" id="Skilllevel2" >
-                                              <label class="form-check-label" for="Skilllevel2">
-                                                  Beginner
-                                              </label>
-                                            </div>
-                                            <div class="form-check">
-                                              <input class="form-check-input" type="radio" name="Skilllevel" id="Skilllevel3" >
-                                              <label class="form-check-label" for="Skilllevel3">
-                                                  Intermediate
-                                              </label>
-                                            </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingfive">
-                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">
-                                        Lessons
-                                      </button>
-                                    </h2>
-                                    <div id="collapsefive" class="accordion-collapse collapse" aria-labelledby="headingfive" data-bs-parent="#accordionExample">
-                                      <div class="accordion-body p-0">
-                                          <div class="form-check">
-                                              <input class="form-check-input" type="radio" name="Skilllevel" id="Skilllevel1" checked>
-                                              <label class="form-check-label" for="Skilllevel1">
-                                                  Advanced
-                                              </label>
-                                            </div>
-                                            <div class="form-check">
-                                              <input class="form-check-input" type="radio" name="Skilllevel" id="Skilllevel2" >
-                                              <label class="form-check-label" for="Skilllevel2">
-                                                  Beginner
-                                              </label>
-                                            </div>
-                                            <div class="form-check">
-                                              <input class="form-check-input" type="radio" name="Skilllevel" id="Skilllevel3" >
-                                              <label class="form-check-label" for="Skilllevel3">
-                                                  Intermediate
-                                              </label>
-                                            </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingsix">
-                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsesix" aria-expanded="false" aria-controls="collapsesix">
-                                        Endorsment
-                                      </button>
-                                    </h2>
-                                    <div id="collapsesix" class="accordion-collapse collapse" aria-labelledby="headingsix" data-bs-parent="#accordionExample">
-                                      <div class="accordion-body p-0">
-                                          <div class="form-check">
-                                              <input class="form-check-input" type="radio" name="Skilllevel" id="Skilllevel1" checked>
-                                              <label class="form-check-label" for="Skilllevel1">
-                                                  Advanced
-                                              </label>
-                                            </div>
-                                            <div class="form-check">
-                                              <input class="form-check-input" type="radio" name="Skilllevel" id="Skilllevel2" >
-                                              <label class="form-check-label" for="Skilllevel2">
-                                                  Beginner
-                                              </label>
-                                            </div>
-                                            <div class="form-check">
-                                              <input class="form-check-input" type="radio" name="Skilllevel" id="Skilllevel3" >
-                                              <label class="form-check-label" for="Skilllevel3">
-                                                  Intermediate
-                                              </label>
-                                            </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <button type="button" class="btn btn-success w-100 mt-3 py-1">Apply</button>
-                        </div>
+
+                          </div>
+                          </nav>
+                        
                         <div class="right-panel">
                             <div class="tab-content">
                                 <div id="list" class="container tab-pane active">
@@ -1215,7 +1230,199 @@
                                     <li>
                                         <div class="row">
                                             <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 p-0">
-                                                <img src="assets/images/tab-img-1.png" class="w-100">
+                                                <img src="assets/images/tab-img-2.png" class="w-100">
+                                            </div>
+                                            <div class="col-xl-10 col-lg-10 col-md-9 col-sm-8">
+                                                <h5>Network Address Translation Operation and Configuration <span class="badg">Skills</span></h5>
+                                                <span class="pr-2">by Ross Bagurdes </span>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <small>(25)</small>
+                                                <div class="awards">
+                                                <ul class="navbar-nav me-auto">
+                                                    <li class="od-list">
+                                                    <div class="gcc" style="gap: 5px;">
+                                                        <img class="img-sty" src="assets/images/less.png">
+                                                        <small class="sld-text">Lesson : 21</small>
+                                                      </div>
+                                                      <div class="gcc" style="gap: 5px;">
+                                                        <img class="img-sty" src="assets/images/user-sld.png">
+                                                        <small class="sld-text">student : 99</small>
+                                                      </div>
+                                                      <div class="gcc" style="gap: 5px;">
+                                                        <img class="img-sty" src="assets/images/cup.png">
+                                                        <small class="sld-text">Advanced</small>
+                                                      </div>
+                                                    </li>
+                                                      
+                                                </ul>
+                                                <ul class="navbar-nav ms-auto">
+                                                    <li class="od-list">
+                                                        <div class="gcc" style="gap: 5px;">
+                                                            <img class="img-sty" src="assets/images/like-sld.png">
+                                                            <small class="sld-text">721 Likes</small>
+                                                          </div>
+                                                          <div class="gcc" style="gap: 5px;">
+                                                            <img class="img-sty" src="assets/images/eye.png">
+                                                            <small class="sld-text">17,213 Views</small>
+                                                          </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                              </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="row">
+                                            <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 p-0">
+                                                <img src="assets/images/tab-img-3.png" class="w-100">
+                                            </div>
+                                            <div class="col-xl-10 col-lg-10 col-md-9 col-sm-8">
+                                                <h5>Understanding and Using Essential Tools for Enterprise Linux 7 <span class="badg">Skills</span></h5>
+                                                <span class="pr-2">by Casey Ayers </span>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <small>(25)</small>
+                                                <div class="awards">
+                                                <ul class="navbar-nav me-auto">
+                                                    <li class="od-list">
+                                                    <div class="gcc" style="gap: 5px;">
+                                                        <img class="img-sty" src="assets/images/less.png">
+                                                        <small class="sld-text">Lesson : 21</small>
+                                                      </div>
+                                                      <div class="gcc" style="gap: 5px;">
+                                                        <img class="img-sty" src="assets/images/user-sld.png">
+                                                        <small class="sld-text">student : 99</small>
+                                                      </div>
+                                                      <div class="gcc" style="gap: 5px;">
+                                                        <img class="img-sty" src="assets/images/cup.png">
+                                                        <small class="sld-text">Advanced</small>
+                                                      </div>
+                                                    </li>
+                                                      
+                                                </ul>
+                                                <ul class="navbar-nav ms-auto">
+                                                    <li class="od-list">
+                                                        <div class="gcc" style="gap: 5px;">
+                                                            <img class="img-sty" src="assets/images/like-sld.png">
+                                                            <small class="sld-text">721 Likes</small>
+                                                          </div>
+                                                          <div class="gcc" style="gap: 5px;">
+                                                            <img class="img-sty" src="assets/images/eye.png">
+                                                            <small class="sld-text">17,213 Views</small>
+                                                          </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                              </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="row">
+                                            <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 p-0">
+                                                <img src="assets/images/tab-img-4.png" class="w-100">
+                                            </div>
+                                            <div class="col-xl-10 col-lg-10 col-md-9 col-sm-8">
+                                                <h5>Understanding AWS Core Services <span class="badg">Skills</span></h5>
+                                                <span class="pr-2">by Casey Ayers </span>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <small>(25)</small>
+                                                <div class="awards">
+                                                <ul class="navbar-nav me-auto">
+                                                    <li class="od-list">
+                                                    <div class="gcc" style="gap: 5px;">
+                                                        <img class="img-sty" src="assets/images/less.png">
+                                                        <small class="sld-text">Lesson : 21</small>
+                                                      </div>
+                                                      <div class="gcc" style="gap: 5px;">
+                                                        <img class="img-sty" src="assets/images/user-sld.png">
+                                                        <small class="sld-text">student : 99</small>
+                                                      </div>
+                                                      <div class="gcc" style="gap: 5px;">
+                                                        <img class="img-sty" src="assets/images/cup.png">
+                                                        <small class="sld-text">Advanced</small>
+                                                      </div>
+                                                    </li>
+                                                      
+                                                </ul>
+                                                <ul class="navbar-nav ms-auto">
+                                                    <li class="od-list">
+                                                        <div class="gcc" style="gap: 5px;">
+                                                            <img class="img-sty" src="assets/images/like-sld.png">
+                                                            <small class="sld-text">721 Likes</small>
+                                                          </div>
+                                                          <div class="gcc" style="gap: 5px;">
+                                                            <img class="img-sty" src="assets/images/eye.png">
+                                                            <small class="sld-text">17,213 Views</small>
+                                                          </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                              </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="row">
+                                            <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 p-0">
+                                                <img src="assets/images/tab-img-5.png" class="w-100">
+                                            </div>
+                                            <div class="col-xl-10 col-lg-10 col-md-9 col-sm-8">
+                                                <h5>Photoshop CC Fundamentals <span class="badg">Skills</span></h5>
+                                                <span class="pr-2">by Casey Ayers </span>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <small>(25)</small>
+                                                <div class="awards">
+                                                <ul class="navbar-nav me-auto">
+                                                    <li class="od-list">
+                                                    <div class="gcc" style="gap: 5px;">
+                                                        <img class="img-sty" src="assets/images/less.png">
+                                                        <small class="sld-text">Lesson : 21</small>
+                                                      </div>
+                                                      <div class="gcc" style="gap: 5px;">
+                                                        <img class="img-sty" src="assets/images/user-sld.png">
+                                                        <small class="sld-text">student : 99</small>
+                                                      </div>
+                                                      <div class="gcc" style="gap: 5px;">
+                                                        <img class="img-sty" src="assets/images/cup.png">
+                                                        <small class="sld-text">Advanced</small>
+                                                      </div>
+                                                    </li>
+                                                      
+                                                </ul>
+                                                <ul class="navbar-nav ms-auto">
+                                                    <li class="od-list">
+                                                        <div class="gcc" style="gap: 5px;">
+                                                            <img class="img-sty" src="assets/images/like-sld.png">
+                                                            <small class="sld-text">721 Likes</small>
+                                                          </div>
+                                                          <div class="gcc" style="gap: 5px;">
+                                                            <img class="img-sty" src="assets/images/eye.png">
+                                                            <small class="sld-text">17,213 Views</small>
+                                                          </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                              </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="row">
+                                            <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 p-0">
+                                                <img src="assets/images/tab-img-6.png" class="w-100">
                                             </div>
                                             <div class="col-xl-10 col-lg-10 col-md-9 col-sm-8">
                                                 <h5>Getting Started with Agile Business Analysis and the IIBA-AAC Certification <span class="badg">Skills</span></h5>
@@ -1260,11 +1467,561 @@
                                               </div>
                                         </div>
                                     </li>
+                                    <li>
+                                        <div class="row">
+                                            <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 p-0">
+                                                <img src="assets/images/tab-img-7.png" class="w-100">
+                                            </div>
+                                            <div class="col-xl-10 col-lg-10 col-md-9 col-sm-8">
+                                                <h5>Getting Started with Agile Business Analysis and the IIBA-AAC Certification <span class="badg">Skills</span></h5>
+                                                <span class="pr-2">by Casey Ayers </span>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <small>(25)</small>
+                                                <div class="awards">
+                                                <ul class="navbar-nav me-auto">
+                                                    <li class="od-list">
+                                                    <div class="gcc" style="gap: 5px;">
+                                                        <img class="img-sty" src="assets/images/less.png">
+                                                        <small class="sld-text">Lesson : 21</small>
+                                                      </div>
+                                                      <div class="gcc" style="gap: 5px;">
+                                                        <img class="img-sty" src="assets/images/user-sld.png">
+                                                        <small class="sld-text">student : 99</small>
+                                                      </div>
+                                                      <div class="gcc" style="gap: 5px;">
+                                                        <img class="img-sty" src="assets/images/cup.png">
+                                                        <small class="sld-text">Advanced</small>
+                                                      </div>
+                                                    </li>
+                                                      
+                                                </ul>
+                                                <ul class="navbar-nav ms-auto">
+                                                    <li class="od-list">
+                                                        <div class="gcc" style="gap: 5px;">
+                                                            <img class="img-sty" src="assets/images/like-sld.png">
+                                                            <small class="sld-text">721 Likes</small>
+                                                          </div>
+                                                          <div class="gcc" style="gap: 5px;">
+                                                            <img class="img-sty" src="assets/images/eye.png">
+                                                            <small class="sld-text">17,213 Views</small>
+                                                          </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                              </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="row">
+                                            <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 p-0">
+                                                <img src="assets/images/tab-img-8.png" class="w-100">
+                                            </div>
+                                            <div class="col-xl-10 col-lg-10 col-md-9 col-sm-8">
+                                                <h5>Getting Started with Agile Business Analysis and the IIBA-AAC Certification<span class="badg">Skills</span></h5>
+                                                <span class="pr-2">by Casey Ayers </span>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <i class="fa-solid fa-star text-warning"></i>
+                                                <small>(25)</small>
+                                                <div class="awards">
+                                                <ul class="navbar-nav me-auto">
+                                                    <li class="od-list">
+                                                    <div class="gcc" style="gap: 5px;">
+                                                        <img class="img-sty" src="assets/images/less.png">
+                                                        <small class="sld-text">Lesson : 21</small>
+                                                      </div>
+                                                      <div class="gcc" style="gap: 5px;">
+                                                        <img class="img-sty" src="assets/images/user-sld.png">
+                                                        <small class="sld-text">student : 99</small>
+                                                      </div>
+                                                      <div class="gcc" style="gap: 5px;">
+                                                        <img class="img-sty" src="assets/images/cup.png">
+                                                        <small class="sld-text">Advanced</small>
+                                                      </div>
+                                                    </li>
+                                                      
+                                                </ul>
+                                                <ul class="navbar-nav ms-auto">
+                                                    <li class="od-list">
+                                                        <div class="gcc" style="gap: 5px;">
+                                                            <img class="img-sty" src="assets/images/like-sld.png">
+                                                            <small class="sld-text">721 Likes</small>
+                                                          </div>
+                                                          <div class="gcc" style="gap: 5px;">
+                                                            <img class="img-sty" src="assets/images/eye.png">
+                                                            <small class="sld-text">17,213 Views</small>
+                                                          </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                              </div>
+                                        </div>
+                                    </li>
                                  </ul>
+                                 <div class="text-center">
+                                 <button type="button" class="btn btn-outline-success px-5 ">Load More</button>
                                 </div>
-                                <div id="grid" class="container tab-pane fade"><br>
-                                  <h3>Menu 1</h3>
-                                  <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                </div>
+                                <div id="grid" class="container tab-pane fade">
+                                    <div class="row">
+                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 mb-3">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+                                                            <img src="assets/images/tab-img-1.png" class="w-100">
+                                                        </div>
+                                                        <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12">
+                                                            <h5>Getting Started with Agile Business Analysis and the IIBA-AAC Certification <span class="badg">Skills</span></h5>
+                                                            <span class="pr-2">by Casey Ayers </span>
+                                                            <i class="fa-solid fa-star text-warning"></i>
+                                                            <i class="fa-solid fa-star text-warning"></i>
+                                                            <i class="fa-solid fa-star text-warning"></i>
+                                                            <i class="fa-solid fa-star text-warning"></i>
+                                                            <i class="fa-solid fa-star text-warning"></i>
+                                                            <small>(25)</small>
+                                                            
+                                                            </div>
+                                                            <div class="col-sm-12">
+                                                                <div class="awards">
+                                                                <ul class="navbar-nav me-auto">
+                                                                    <li class="od-list">
+                                                                    <div class="gcc" style="gap: 5px;">
+                                                                        <img class="img-sty" src="assets/images/less.png">
+                                                                        <small class="sld-text">Lesson : 21</small>
+                                                                      </div>
+                                                                      <div class="gcc" style="gap: 5px;">
+                                                                        <img class="img-sty" src="assets/images/user-sld.png">
+                                                                        <small class="sld-text">student : 99</small>
+                                                                      </div>
+                                                                      <div class="gcc" style="gap: 5px;">
+                                                                        <img class="img-sty" src="assets/images/cup.png">
+                                                                        <small class="sld-text">Advanced</small>
+                                                                      </div>
+                                                                    </li>
+                                                                      
+                                                                </ul>
+                                                                <ul class="navbar-nav ms-auto">
+                                                                    <li class="od-list">
+                                                                        <div class="gcc" style="gap: 5px;">
+                                                                            <img class="img-sty" src="assets/images/like-sld.png">
+                                                                            <small class="sld-text">721 Likes</small>
+                                                                          </div>
+                                                                          <div class="gcc" style="gap: 5px;">
+                                                                            <img class="img-sty" src="assets/images/eye.png">
+                                                                            <small class="sld-text">17,213 Views</small>
+                                                                          </div>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 mb-3">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+                                                            <img src="assets/images/tab-img-1.png" class="w-100">
+                                                        </div>
+                                                        <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12">
+                                                            <h5>Getting Started with Agile Business Analysis and the IIBA-AAC Certification <span class="badg">Skills</span></h5>
+                                                            <span class="pr-2">by Casey Ayers </span>
+                                                            <i class="fa-solid fa-star text-warning"></i>
+                                                            <i class="fa-solid fa-star text-warning"></i>
+                                                            <i class="fa-solid fa-star text-warning"></i>
+                                                            <i class="fa-solid fa-star text-warning"></i>
+                                                            <i class="fa-solid fa-star text-warning"></i>
+                                                            <small>(25)</small>
+                                                            
+                                                            </div>
+                                                            <div class="col-sm-12">
+                                                                <div class="awards">
+                                                                <ul class="navbar-nav me-auto">
+                                                                    <li class="od-list">
+                                                                    <div class="gcc" style="gap: 5px;">
+                                                                        <img class="img-sty" src="assets/images/less.png">
+                                                                        <small class="sld-text">Lesson : 21</small>
+                                                                      </div>
+                                                                      <div class="gcc" style="gap: 5px;">
+                                                                        <img class="img-sty" src="assets/images/user-sld.png">
+                                                                        <small class="sld-text">student : 99</small>
+                                                                      </div>
+                                                                      <div class="gcc" style="gap: 5px;">
+                                                                        <img class="img-sty" src="assets/images/cup.png">
+                                                                        <small class="sld-text">Advanced</small>
+                                                                      </div>
+                                                                    </li>
+                                                                      
+                                                                </ul>
+                                                                <ul class="navbar-nav ms-auto">
+                                                                    <li class="od-list">
+                                                                        <div class="gcc" style="gap: 5px;">
+                                                                            <img class="img-sty" src="assets/images/like-sld.png">
+                                                                            <small class="sld-text">721 Likes</small>
+                                                                          </div>
+                                                                          <div class="gcc" style="gap: 5px;">
+                                                                            <img class="img-sty" src="assets/images/eye.png">
+                                                                            <small class="sld-text">17,213 Views</small>
+                                                                          </div>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 mb-3">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+                                                            <img src="assets/images/tab-img-1.png" class="w-100">
+                                                        </div>
+                                                        <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12">
+                                                            <h5>Getting Started with Agile Business Analysis and the IIBA-AAC Certification <span class="badg">Skills</span></h5>
+                                                            <span class="pr-2">by Casey Ayers </span>
+                                                            <i class="fa-solid fa-star text-warning"></i>
+                                                            <i class="fa-solid fa-star text-warning"></i>
+                                                            <i class="fa-solid fa-star text-warning"></i>
+                                                            <i class="fa-solid fa-star text-warning"></i>
+                                                            <i class="fa-solid fa-star text-warning"></i>
+                                                            <small>(25)</small>
+                                                            
+                                                            </div>
+                                                            <div class="col-sm-12">
+                                                                <div class="awards">
+                                                                <ul class="navbar-nav me-auto">
+                                                                    <li class="od-list">
+                                                                    <div class="gcc" style="gap: 5px;">
+                                                                        <img class="img-sty" src="assets/images/less.png">
+                                                                        <small class="sld-text">Lesson : 21</small>
+                                                                      </div>
+                                                                      <div class="gcc" style="gap: 5px;">
+                                                                        <img class="img-sty" src="assets/images/user-sld.png">
+                                                                        <small class="sld-text">student : 99</small>
+                                                                      </div>
+                                                                      <div class="gcc" style="gap: 5px;">
+                                                                        <img class="img-sty" src="assets/images/cup.png">
+                                                                        <small class="sld-text">Advanced</small>
+                                                                      </div>
+                                                                    </li>
+                                                                      
+                                                                </ul>
+                                                                <ul class="navbar-nav ms-auto">
+                                                                    <li class="od-list">
+                                                                        <div class="gcc" style="gap: 5px;">
+                                                                            <img class="img-sty" src="assets/images/like-sld.png">
+                                                                            <small class="sld-text">721 Likes</small>
+                                                                          </div>
+                                                                          <div class="gcc" style="gap: 5px;">
+                                                                            <img class="img-sty" src="assets/images/eye.png">
+                                                                            <small class="sld-text">17,213 Views</small>
+                                                                          </div>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 mb-3">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+                                                            <img src="assets/images/tab-img-1.png" class="w-100">
+                                                        </div>
+                                                        <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12">
+                                                            <h5>Getting Started with Agile Business Analysis and the IIBA-AAC Certification <span class="badg">Skills</span></h5>
+                                                            <span class="pr-2">by Casey Ayers </span>
+                                                            <i class="fa-solid fa-star text-warning"></i>
+                                                            <i class="fa-solid fa-star text-warning"></i>
+                                                            <i class="fa-solid fa-star text-warning"></i>
+                                                            <i class="fa-solid fa-star text-warning"></i>
+                                                            <i class="fa-solid fa-star text-warning"></i>
+                                                            <small>(25)</small>
+                                                            
+                                                            </div>
+                                                            <div class="col-sm-12">
+                                                                <div class="awards">
+                                                                <ul class="navbar-nav me-auto">
+                                                                    <li class="od-list">
+                                                                    <div class="gcc" style="gap: 5px;">
+                                                                        <img class="img-sty" src="assets/images/less.png">
+                                                                        <small class="sld-text">Lesson : 21</small>
+                                                                      </div>
+                                                                      <div class="gcc" style="gap: 5px;">
+                                                                        <img class="img-sty" src="assets/images/user-sld.png">
+                                                                        <small class="sld-text">student : 99</small>
+                                                                      </div>
+                                                                      <div class="gcc" style="gap: 5px;">
+                                                                        <img class="img-sty" src="assets/images/cup.png">
+                                                                        <small class="sld-text">Advanced</small>
+                                                                      </div>
+                                                                    </li>
+                                                                      
+                                                                </ul>
+                                                                <ul class="navbar-nav ms-auto">
+                                                                    <li class="od-list">
+                                                                        <div class="gcc" style="gap: 5px;">
+                                                                            <img class="img-sty" src="assets/images/like-sld.png">
+                                                                            <small class="sld-text">721 Likes</small>
+                                                                          </div>
+                                                                          <div class="gcc" style="gap: 5px;">
+                                                                            <img class="img-sty" src="assets/images/eye.png">
+                                                                            <small class="sld-text">17,213 Views</small>
+                                                                          </div>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 mb-3">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+                                                            <img src="assets/images/tab-img-1.png" class="w-100">
+                                                        </div>
+                                                        <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12">
+                                                            <h5>Getting Started with Agile Business Analysis and the IIBA-AAC Certification <span class="badg">Skills</span></h5>
+                                                            <span class="pr-2">by Casey Ayers </span>
+                                                            <i class="fa-solid fa-star text-warning"></i>
+                                                            <i class="fa-solid fa-star text-warning"></i>
+                                                            <i class="fa-solid fa-star text-warning"></i>
+                                                            <i class="fa-solid fa-star text-warning"></i>
+                                                            <i class="fa-solid fa-star text-warning"></i>
+                                                            <small>(25)</small>
+                                                            
+                                                            </div>
+                                                            <div class="col-sm-12">
+                                                                <div class="awards">
+                                                                <ul class="navbar-nav me-auto">
+                                                                    <li class="od-list">
+                                                                    <div class="gcc" style="gap: 5px;">
+                                                                        <img class="img-sty" src="assets/images/less.png">
+                                                                        <small class="sld-text">Lesson : 21</small>
+                                                                      </div>
+                                                                      <div class="gcc" style="gap: 5px;">
+                                                                        <img class="img-sty" src="assets/images/user-sld.png">
+                                                                        <small class="sld-text">student : 99</small>
+                                                                      </div>
+                                                                      <div class="gcc" style="gap: 5px;">
+                                                                        <img class="img-sty" src="assets/images/cup.png">
+                                                                        <small class="sld-text">Advanced</small>
+                                                                      </div>
+                                                                    </li>
+                                                                      
+                                                                </ul>
+                                                                <ul class="navbar-nav ms-auto">
+                                                                    <li class="od-list">
+                                                                        <div class="gcc" style="gap: 5px;">
+                                                                            <img class="img-sty" src="assets/images/like-sld.png">
+                                                                            <small class="sld-text">721 Likes</small>
+                                                                          </div>
+                                                                          <div class="gcc" style="gap: 5px;">
+                                                                            <img class="img-sty" src="assets/images/eye.png">
+                                                                            <small class="sld-text">17,213 Views</small>
+                                                                          </div>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 mb-3">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+                                                            <img src="assets/images/tab-img-1.png" class="w-100">
+                                                        </div>
+                                                        <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12">
+                                                            <h5>Getting Started with Agile Business Analysis and the IIBA-AAC Certification <span class="badg">Skills</span></h5>
+                                                            <span class="pr-2">by Casey Ayers </span>
+                                                            <i class="fa-solid fa-star text-warning"></i>
+                                                            <i class="fa-solid fa-star text-warning"></i>
+                                                            <i class="fa-solid fa-star text-warning"></i>
+                                                            <i class="fa-solid fa-star text-warning"></i>
+                                                            <i class="fa-solid fa-star text-warning"></i>
+                                                            <small>(25)</small>
+                                                            
+                                                            </div>
+                                                            <div class="col-sm-12">
+                                                                <div class="awards">
+                                                                <ul class="navbar-nav me-auto">
+                                                                    <li class="od-list">
+                                                                    <div class="gcc" style="gap: 5px;">
+                                                                        <img class="img-sty" src="assets/images/less.png">
+                                                                        <small class="sld-text">Lesson : 21</small>
+                                                                      </div>
+                                                                      <div class="gcc" style="gap: 5px;">
+                                                                        <img class="img-sty" src="assets/images/user-sld.png">
+                                                                        <small class="sld-text">student : 99</small>
+                                                                      </div>
+                                                                      <div class="gcc" style="gap: 5px;">
+                                                                        <img class="img-sty" src="assets/images/cup.png">
+                                                                        <small class="sld-text">Advanced</small>
+                                                                      </div>
+                                                                    </li>
+                                                                      
+                                                                </ul>
+                                                                <ul class="navbar-nav ms-auto">
+                                                                    <li class="od-list">
+                                                                        <div class="gcc" style="gap: 5px;">
+                                                                            <img class="img-sty" src="assets/images/like-sld.png">
+                                                                            <small class="sld-text">721 Likes</small>
+                                                                          </div>
+                                                                          <div class="gcc" style="gap: 5px;">
+                                                                            <img class="img-sty" src="assets/images/eye.png">
+                                                                            <small class="sld-text">17,213 Views</small>
+                                                                          </div>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 mb-3">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+                                                            <img src="assets/images/tab-img-1.png" class="w-100">
+                                                        </div>
+                                                        <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12">
+                                                            <h5>Getting Started with Agile Business Analysis and the IIBA-AAC Certification <span class="badg">Skills</span></h5>
+                                                            <span class="pr-2">by Casey Ayers </span>
+                                                            <i class="fa-solid fa-star text-warning"></i>
+                                                            <i class="fa-solid fa-star text-warning"></i>
+                                                            <i class="fa-solid fa-star text-warning"></i>
+                                                            <i class="fa-solid fa-star text-warning"></i>
+                                                            <i class="fa-solid fa-star text-warning"></i>
+                                                            <small>(25)</small>
+                                                            
+                                                            </div>
+                                                            <div class="col-sm-12">
+                                                                <div class="awards">
+                                                                <ul class="navbar-nav me-auto">
+                                                                    <li class="od-list">
+                                                                    <div class="gcc" style="gap: 5px;">
+                                                                        <img class="img-sty" src="assets/images/less.png">
+                                                                        <small class="sld-text">Lesson : 21</small>
+                                                                      </div>
+                                                                      <div class="gcc" style="gap: 5px;">
+                                                                        <img class="img-sty" src="assets/images/user-sld.png">
+                                                                        <small class="sld-text">student : 99</small>
+                                                                      </div>
+                                                                      <div class="gcc" style="gap: 5px;">
+                                                                        <img class="img-sty" src="assets/images/cup.png">
+                                                                        <small class="sld-text">Advanced</small>
+                                                                      </div>
+                                                                    </li>
+                                                                      
+                                                                </ul>
+                                                                <ul class="navbar-nav ms-auto">
+                                                                    <li class="od-list">
+                                                                        <div class="gcc" style="gap: 5px;">
+                                                                            <img class="img-sty" src="assets/images/like-sld.png">
+                                                                            <small class="sld-text">721 Likes</small>
+                                                                          </div>
+                                                                          <div class="gcc" style="gap: 5px;">
+                                                                            <img class="img-sty" src="assets/images/eye.png">
+                                                                            <small class="sld-text">17,213 Views</small>
+                                                                          </div>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 mb-3">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+                                                            <img src="assets/images/tab-img-1.png" class="w-100">
+                                                        </div>
+                                                        <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12">
+                                                            <h5>Getting Started with Agile Business Analysis and the IIBA-AAC Certification <span class="badg">Skills</span></h5>
+                                                            <span class="pr-2">by Casey Ayers </span>
+                                                            <i class="fa-solid fa-star text-warning"></i>
+                                                            <i class="fa-solid fa-star text-warning"></i>
+                                                            <i class="fa-solid fa-star text-warning"></i>
+                                                            <i class="fa-solid fa-star text-warning"></i>
+                                                            <i class="fa-solid fa-star text-warning"></i>
+                                                            <small>(25)</small>
+                                                            
+                                                            </div>
+                                                            <div class="col-sm-12">
+                                                                <div class="awards">
+                                                                <ul class="navbar-nav me-auto">
+                                                                    <li class="od-list">
+                                                                    <div class="gcc" style="gap: 5px;">
+                                                                        <img class="img-sty" src="assets/images/less.png">
+                                                                        <small class="sld-text">Lesson : 21</small>
+                                                                      </div>
+                                                                      <div class="gcc" style="gap: 5px;">
+                                                                        <img class="img-sty" src="assets/images/user-sld.png">
+                                                                        <small class="sld-text">student : 99</small>
+                                                                      </div>
+                                                                      <div class="gcc" style="gap: 5px;">
+                                                                        <img class="img-sty" src="assets/images/cup.png">
+                                                                        <small class="sld-text">Advanced</small>
+                                                                      </div>
+                                                                    </li>
+                                                                      
+                                                                </ul>
+                                                                <ul class="navbar-nav ms-auto">
+                                                                    <li class="od-list">
+                                                                        <div class="gcc" style="gap: 5px;">
+                                                                            <img class="img-sty" src="assets/images/like-sld.png">
+                                                                            <small class="sld-text">721 Likes</small>
+                                                                          </div>
+                                                                          <div class="gcc" style="gap: 5px;">
+                                                                            <img class="img-sty" src="assets/images/eye.png">
+                                                                            <small class="sld-text">17,213 Views</small>
+                                                                          </div>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="col-sm-12 text-center">
+                                            <button type="button" class="btn btn-outline-success px-5 ">Load More</button>
+                                           </div>
+                                    </div>
                                 </div>
                               </div>
                         </div>
@@ -1275,6 +2032,314 @@
               </div>
               </div>
     </section>
+
+    <section>
+        <div class="container-fluid pt-4">
+          <div class="row">
+            <div class="container-new">
+              <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                    <p class="theme-color mb-0">Running Courses</p>
+                  <div class="careers mb-4">
+                    <h4>My Careers</h4>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-12">
+                        <div class="card border-0 mb-3" style="background-color: #fafafa;">
+                            <div class="card-body p-2">
+                                <div class="row">
+                                    <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12">
+                                        <img src="assets/images/runn-1.png" class="w-100 rounded-2 h-100">
+                                    </div>
+                                    <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12">
+                                        <p class="text-bold">Google Ads Training 2021: Profit with Pay</p>
+                                        <div class="grid-3 pt-2">
+                                            <div class="gcc" style="gap: 5px;">
+                                              <img class="img-sty" src="assets/images/less.png">
+                                              <small class="sld-text">Lesson : 21</small>
+                                            </div>
+                                            <div class="gcc" style="gap: 5px;">
+                                              <img class="img-sty" src="assets/images/user-sld.png">
+                                              <small class="sld-text">student : 99</small>
+                                            </div>
+                                            <div class="gcc" style="gap: 5px;">
+                                              <img class="img-sty" src="assets/images/cup.png">
+                                              <small class="sld-text">Advanced</small>
+                                            </div>
+                                          </div>
+                                          <div class="progress">
+                                            <div class="bar" style="width:75%"></div>
+                                        </div>
+                                        <div class="runn">
+                                            <small>points : 75 / 100</small>
+                                            <small>days : 56</small>
+                                        </div>
+                                        <div class="runn mt-3">
+                                            <div class="runn-inn">
+                                                <div>
+                                                <img src="assets/images/runn-1-1.png" class="rounded-2">
+                                            </div>
+                                            <div>
+                                                <small>Jon Kantner</small><br>
+                                                <small class="text-muted" style="font-size: 12px;">SEO</small>
+                                            </div>
+                                                
+                                    </div>
+                                    <div>
+                                        <button type="button" class="btn btn-success">
+                                            Let's Go <i class="fa-solid fa-chevron-right" style="font-size: 12px;"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  
+                </div>
+                <div class="col-sm-12">
+                    <div class="card border-0 mb-3" style="background-color: #fafafa;">
+                        <div class="card-body p-2">
+                            <div class="row">
+                                <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12">
+                                    <img src="assets/images/runn-2.png" class="w-100 rounded-2 h-100">
+                                </div>
+                                <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12">
+                                    <p class="text-bold">Python for Beginners - Learn Programming...</p>
+                                    <div class="grid-3 pt-2">
+                                        <div class="gcc" style="gap: 5px;">
+                                          <img class="img-sty" src="assets/images/less.png">
+                                          <small class="sld-text">Lesson : 21</small>
+                                        </div>
+                                        <div class="gcc" style="gap: 5px;">
+                                          <img class="img-sty" src="assets/images/user-sld.png">
+                                          <small class="sld-text">student : 99</small>
+                                        </div>
+                                        <div class="gcc" style="gap: 5px;">
+                                          <img class="img-sty" src="assets/images/cup.png">
+                                          <small class="sld-text">Advanced</small>
+                                        </div>
+                                      </div>
+                                      <div class="progress">
+                                        <div class="bar" style="width:75%"></div>
+                                    </div>
+                                    <div class="runn">
+                                        <small>points : 75 / 100</small>
+                                        <small>days : 56</small>
+                                    </div>
+                                    <div class="runn mt-3">
+                                        <div class="runn-inn">
+                                            <div>
+                                            <img src="assets/images/runn-2-1.png" class="rounded-2">
+                                        </div>
+                                        <div>
+                                            <small>Jon Kantner</small><br>
+                                            <small class="text-muted" style="font-size: 12px;">Design teacher</small>
+                                        </div>
+                                            
+                                </div>
+                                <div>
+                                    <button type="button" class="btn btn-success">
+                                        Let's Go <i class="fa-solid fa-chevron-right" style="font-size: 12px;"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              
+            </div>
+        </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                    <p class="theme-color mb-0">Schedule</p>
+                  <div class="careers mb-4">
+                    <h4>Up Next</h4>
+                  </div>
+                  <div class="card border-0 mb-3" style="background-color: #fafafa;">
+                    <div class="card-body">
+                        <div class="up-next">
+                        <div class="runn">
+                            <p class="text-bold">Getting Started with Agile Business Analysis and the IIBA-AAC Certification </p>
+                            <span class="badg theme-color">Skills</span>
+                        </div>
+                        
+                                                            <span class="pr-2">by Casey Ayers </span>
+                                                            <i class="fa-solid fa-star text-warning"></i>
+                                                            <i class="fa-solid fa-star text-warning"></i>
+                                                            <i class="fa-solid fa-star text-warning"></i>
+                                                            <i class="fa-solid fa-star text-warning"></i>
+                                                            <i class="fa-solid fa-star text-warning"></i>
+                                                            <small>(25)</small>
+                    </div>
+                    <div class="up-next">
+                        <div class="runn">
+                            <p class="text-bold">Getting Started with Agile Business Analysis and the IIBA-AAC Certification </p>
+                            <span class="badg theme-color">Skills</span>
+                        </div>
+                    </div>
+                </div>
+                    </div>
+
+
+                </div>
+
+                </div>
+                
+                </div>
+                </div>
+            </div>
+                </section>
+
+                <section>
+                    <div class="container-fluid mt-3 pb-5">
+                      <div class="row">
+                        <div class="container-new">
+                          <div class="row">
+                            <div class="col-sm-12 mb-3">
+                              <h4>Our recent blogs</h4>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                              <div class="row">
+                                <div class="col-sm-12">
+                                  <div class="row">
+                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                      <img src="assets/images/blog-img-1.png" class="w-100">
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                      <small class="theme-color text-bold">November 16, 2014</small>
+                                      <h5>Three Pillars of User Delight</h5>
+                                      <p>Delight can be experienced viscerally, behaviourally, and reflectively. A great design is ...</p>
+                                      <div class="blog-grid-2">
+                                        <a href="#" class="btn btn-success px-2 py-1 sld-next-btn theme-color">Research</a>
+                                        <a href="#" class="btn btn-success px-2 py-1 sld-next-btn theme-color">UI UX</a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-sm-12 mt-4">
+                                  <div class="row">
+                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                      <img src="assets/images/blog-img-2.png" class="w-100">
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                      <small class="theme-color text-bold">September 24, 2017</small>
+                                      <h5>UX Mapping Methods</h5>
+                                      <p>Visual-design principles can be applied consistently throughout the process of creating a polished UX map...</p>
+                                      <div class="blog-grid-2">
+                                        <a href="#" class="btn btn-success px-2 py-1 sld-next-btn theme-color">Research</a>
+                                        <a href="#" class="btn btn-success px-2 py-1 sld-next-btn theme-color">UI Design</a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 mt-4">
+                              <img src="assets/images/blog-img-3.png" class="w-100 mb-4 h-200">
+                              <small class="theme-color text-bold">March 13, 2014</small>
+                                      <h5>Agile Development Projects and Usability</h5>
+                                      <p>Agile methods aim to overcome usability barriers in traditional development, but post new threats to user experience quality. </p>
+                                      <div class="blog-grid-2">
+                                        <a href="#" class="btn btn-success px-2 py-1 sld-next-btn theme-color">Programming</a>
+                                        <a href="#" class="btn btn-success px-2 py-1 sld-next-btn theme-color">Research</a>
+                                        <a href="#" class="btn btn-success px-2 py-1 sld-next-btn theme-color">Developments</a>
+                                      </div>
+                            </div>
+                          </div>
+                          </div>
+                          </div>
+                          </div>
+                  </section>
+              
+                  <section>
+                    <div class="container-fluid">
+                      <div class="row right-col" style="background-color: #EBFFF9;">
+                        <div class="container-new">
+                          <div class="row py-5">
+                            <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12">
+                              <h4>Find out about the latest courses with <br> the <span class="theme-color"> academy</span> newsletter</h4>
+                              
+                            </div>
+                            <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12">
+                              <div class="input-group mb-3 p-2" style="position: relative;z-index: 1;background-color: #fff;border-radius: 6px;">
+                                <input type="text" class="form-control" placeholder="Search" style="border: 0px;">
+                                <button class="btn btn-success" type="submit">Submit</button>
+                              </div>
+                            </div>
+                          </div>
+                          </div>
+                          </div>
+                          </div>
+                  </section>
+              
+                  <section>
+                    <div class="container-fluid">
+                      <div class="row" style="background-color: #213F35;">
+                        <div class="container-new">
+                          <div class="row py-5 text-light">
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
+                              <div class="footer-cont">
+                                <h4 class="fw">Logo`</h4>
+                                <p class="fw">Top learning experiences that create more <br> talent in the world.</p>
+                              </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-2 col-md-2 col-sm-6">
+                              <p class="text-bold">Product</p>
+                              <ul class="footer-nav">
+                                <li><a href="#">Overview</a></li>
+                                <li><a href="#">Features</a></li>
+                                <li><a href="#">Solutions</a></li>
+                                <li><a href="#">Tutorials</a></li>
+                              </ul>
+                            </div>
+                            <div class="col-xl-2 col-lg-2 col-md-2 col-sm-6">
+                              <p class="text-bold">Company</p>
+                              <ul class="footer-nav">
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Careers</a></li>
+                                <li><a href="#">Press <span>New</span></a></li>
+                                <li><a href="#">News</a></li>
+                              </ul>
+                            </div>
+                            <div class="col-xl-2 col-lg-2 col-md-2 col-sm-6">
+                              <p class="text-bold">Social</p>
+                              <ul class="footer-nav">
+                                <li><a href="#">Twitter</a></li>
+                                <li><a href="#">LinkedIn</a></li>
+                                <li><a href="#">GitHub</a></li>
+                                <li><a href="#">Dribbble</a></li>
+                              </ul>
+                            </div>
+                            <div class="col-xl-2 col-lg-2 col-md-2 col-sm-6">
+                              <p class="text-bold">Legal</p>
+                              <ul class="footer-nav">
+                                <li><a href="#">Terms</a></li>
+                                <li><a href="#">Privacy</a></li>
+                                <li><a href="#">Cookies</a></li>
+                                <li><a href="#">Contact</a></li>
+                              </ul>
+                            </div>
+                            <div class="col-sm-12 pt-4">
+                              <div class="sol-link">
+                                <div>
+                                  <small>© 2023 CompanyName. All rights reserved.</small>
+                                </div>
+                                <div class="">
+                                  <a class="px-1" href="#"><i class="fa-brands fa-twitter text-white"></i></a>
+                                  <a class="px-1" href="#"><i class="fa-brands fa-linkedin text-white"></i></a>
+                                  <a class="px-1" href="#"><i class="fa-brands fa-facebook text-white"></i></a>
+                                  <a class="px-1" href="#"><i class="fa-brands fa-github text-white"></i></a>
+                                  <a class="px-1" href="#"><i class="fa-brands fa-dribbble text-white"></i></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          </div>
+                          </div>
+                          </div>
+                    </section>
     <!-- Page Script Start -->
     <script type="text/javascript" src="assets/js/jquery.min.js"></script>
     <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>

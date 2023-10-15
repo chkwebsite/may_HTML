@@ -676,3 +676,80 @@ span.badg {
 ul.order-list li h5{
   font-size:16px;
 }
+.ll-hide{
+display:none
+}
+@media (max-width: 767px){
+  .awards{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .awards .me-auto{
+    margin-right: unset !important;
+  }
+  .awards .ms-auto{
+    margin-left: unset !important;
+  }
+}
+@media (max-width: 991px){
+  .ll-hide{
+    display:inline-block;
+    }
+    .overall-career {
+      display: grid;
+      grid-template-columns: auto;
+      gap: 12px;
+      font-size: 13px;
+  }
+  .nav-bb{
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+  }
+}
+.progress {
+  margin: 20px auto;
+  padding: 0;
+  width: 100%;
+  height: 10px;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.bar {
+	position:relative;
+  float:left;
+  min-width:1%;
+  height:100%;
+  background: linear-gradient(to left, #FF991F, #ffe1bd);
+}
+
+.percent {
+	position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  margin:0;
+  font-family:tahoma,arial,helvetica;
+  font-size:12px;
+  color:white;
+}
+.runn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.runn-inn {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 12px;
+}
+.up-next{
+  border-bottom: 1px solid #ddd;
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+}
+ul.my-career-m .nav-link.active {
+  color: #fff;
+  font-weight:500;
+}
