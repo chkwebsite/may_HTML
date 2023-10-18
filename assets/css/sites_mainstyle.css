@@ -33,14 +33,14 @@
   font-family: inter_bold;
   src: url(../webfonts/Inter-Bold.ttf);
 }
-@font-face {
+/* @font-face {
   font-family: myFirstFont;
   src: url(sansation_light.woff);
 }
 @font-face {
   font-family: myFirstFont;
   src: url(sansation_light.woff);
-}
+} */
 body, html{
   font-family: inter_reg !important;
   font-size: 14px;
