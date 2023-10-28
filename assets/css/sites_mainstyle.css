@@ -457,7 +457,7 @@ a{
 .right-col::after {
   content: "";
   position: absolute;
-  border-top: 162px solid #1aa478;
+  border-top: 145px solid #1aa478;
   border-right: 300px solid #1aa478;
   border-radius: 80px 0px 0px 50px;
   right: 0px;
