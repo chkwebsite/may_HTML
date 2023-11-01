@@ -7,7 +7,7 @@
     margin: 0 auto;
   } */
   .slick-slide {
-    margin: 0 5px;
+    margin: 0 8px;
   }
   .slick-list {
     margin: 0px -5px 0px -5px;
@@ -172,7 +172,7 @@
   }
   
   /* Icons */
-  @font-face
+  /* @font-face
   {
       font-family: 'slick';
       font-weight: normal;
@@ -180,7 +180,7 @@
   
       src: url('file:///C:/Users/msadler/Desktop/slick-1.5.7/slick/fonts/slick.eot');
       src: url('file:///C:/Users/msadler/Desktop/slick-1.5.7/slick/fonts/slick.eot?#iefix') format('embedded-opentype'), url('file:///C:/Users/msadler/Desktop/slick-1.5.7/slick/fonts/slick.woff') format('woff'), url('file:///C:/Users/msadler/Desktop/slick-1.5.7/slick/fonts/slick.ttf') format('truetype'), url('file:///C:/Users/msadler/Desktop/slick-1.5.7/slick/fonts/slick.svg#slick') format('svg');
-  }
+  } */
   /* Arrows */
   .slick-prev,
   .slick-next
