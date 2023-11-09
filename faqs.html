@@ -14,6 +14,11 @@
       .accordion-body {
     padding: 30px 35px;
 }
+
+	.offcanvas.offcanvas-bottom {
+    right: 0;
+    left: 0;
+    height: auto;
     </style>
 </head>
 <body>
@@ -140,23 +145,34 @@
           <div class="col-sm-12 p-0">
               <div class="container-new">
                   <div class="row">
-                      <div class="col-sm-12 pt-5 pb-4">
-                          <div class="career-grid-2 asd">
-                              <div class="input-group mb-3" style="border: 1px solid #ddd;border-radius: 25px;">
-                                  <input type="search" class="form-control form-control-lg rounded-5 border-0" placeholder="Search">
-                                  <button class="btn btn-default" type="submit">
-                                      <i class="fa-solid fa-magnifying-glass theme-color f-18"></i>
-                                  </button>
+                            <div class="col-sm-12 pt-5 pb-2">
+                                <div class="career-grid-2 asd">
+                                    <div class="input-group mb-3" style="border: 1px solid #ddd;border-radius: 25px;">
+                                        <input type="search" class="form-control form-control-lg rounded-5 border-0" placeholder="Search">
+                                        <button class="btn btn-default" type="submit">
+                                            <i class="fa-solid fa-magnifying-glass theme-color f-18"></i>
+                                        </button>
+                                      </div>
+                                <div>
+                                    <button type="button" class="btn btn-success w-100 rounded-5" style="padding: 10px;"> Filter 
+                                        <i class="fa-solid fa-chevron-up" style="position: relative;left: 10px;top: -3px;font-size: 12px;"></i>
+                                        <i class="fa-solid fa-chevron-down" style="position: relative;top: 6px;left: -5px;font-size: 12px;"></i>
+                                    </button>
                                 </div>
-                          <div>
-                              <button type="button" class="btn btn-success w-100 rounded-5" style="padding: 10px;"> Filter 
-                                  <i class="fa-solid fa-chevron-up" style="position: relative;left: 10px;top: -3px;font-size: 12px;"></i>
-                                  <i class="fa-solid fa-chevron-down" style="position: relative;top: 6px;left: -5px;font-size: 12px;"></i>
-                              </button>
-                          </div>
-                          </div>
-                      </div>
-                  </div>
+                                </div>
+                            </div>
+							<div class="col-sm-12 pb-4">
+                                <div>
+                                    <small class="text-light f-18 pe-3">Advanced Search</small>
+                                    <button type="button" class="btn btn-success f-18 sld-next-btn theme-color py-1">All Campuses
+                                        <i class="fa-solid fa-xmark ps-3"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-success f-18 sld-next-btn theme-color py-1">All Topics
+                                        <i class="fa-solid fa-xmark ps-3"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
               </div>
           </div>
       </div>
@@ -1395,8 +1411,23 @@
                         <div class="row">
                             <div class="col-sm-12">
                                 <div class="ask-que">
-                                    + Ask a Question
+                                 <button type="button" class="" data-bs-toggle="offcanvas" data-bs-target="#demo" style="border: 0px;background-color: transparent;color: #1aa479;width: 100%;">   + Ask a Question </button>
                                 </div>
+								
+								
+								<div class="offcanvas offcanvas-bottom" id="demo">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title theme-color text-bold">Ask a Question </h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body text-center">
+    <textarea class="form-control mb-4" rows="5" placeholder="Enter Question"></textarea>
+    <button class="btn btn-success" type="button">Submit Question</button>
+  </div>
+</div>
+
+								
+								
                                 <div class="card">
                                     <div class="card-body p-0">
                                         <div class="accordion chat" id="accordionExample">
